@@ -58,9 +58,9 @@ RUN apt-get update \
   	&& apt-get install -y \
   	libpcre3 \
   	libpcre3-dev \
-  	php-pear \
   	&& pecl install oauth \
   	&& echo "extension=oauth.so" > /usr/local/etc/php/conf.d/docker-php-ext-oauth.ini
+
 
 # Install Node, NVM, NPM and Grunt
 
